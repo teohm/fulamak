@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/capistrano/rails.git
+  revision: c642673c7a5a55712bd7d7f77fe5e4be323feb44
+  specs:
+    capistrano-rails (0.0.1)
+      capistrano
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -127,6 +134,7 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano (>= 3.0.0.pre6)
+  capistrano-rails!
   coffee-rails (~> 4.0.0)
   figaro (>= 0.7.0)
   jbuilder (~> 1.2)

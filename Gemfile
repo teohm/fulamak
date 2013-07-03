@@ -46,3 +46,4 @@ end
 
 gem "figaro", ">= 0.7.0"
 gem "capistrano", ">= 3.0.0.pre6"
+gem 'capistrano-rails', github: 'capistrano/rails', require: false
