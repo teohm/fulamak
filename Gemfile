@@ -43,3 +43,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "figaro", ">= 0.7.0"
+gem "capistrano", ">= 3.0.0.pre6"
