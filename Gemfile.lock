@@ -1,9 +1,20 @@
 GIT
-  remote: git://github.com/capistrano/rails.git
-  revision: c642673c7a5a55712bd7d7f77fe5e4be323feb44
+  remote: git://github.com/teohm/capistrano-rails.git
+  revision: 75c5266cb2da1ef421011f30478f3c09b9fd9da8
+  branch: late-migrate
   specs:
     capistrano-rails (0.0.1)
       capistrano
+
+GIT
+  remote: git://github.com/teohm/capistrano.git
+  revision: 8ee1fb013550758d29d217fa98e1c524a77802ad
+  branch: v3-early-bundle
+  specs:
+    capistrano (3.0.0.pre6)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 0.0.23)
 
 GEM
   remote: https://rubygems.org/
@@ -35,10 +46,6 @@ GEM
     arel (4.0.0)
     atomic (1.1.10)
     builder (3.1.4)
-    capistrano (3.0.0.pre6)
-      i18n
-      rake (>= 10.0.0)
-      sshkit (>= 0.0.23)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -61,6 +68,7 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
+    libv8 (3.11.8.13)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -90,6 +98,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    ref (1.0.2)
     sass (3.2.9)
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -114,6 +123,9 @@ GEM
       term-ansicolor
     term-ansicolor (1.2.2)
       tins (~> 0.8)
+    therubyracer (0.11.3)
+      libv8 (~> 3.11.8.12)
+      ref
     thor (0.18.1)
     thread_safe (0.1.0)
       atomic
@@ -133,7 +145,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capistrano (>= 3.0.0.pre6)
+  capistrano!
   capistrano-rails!
   coffee-rails (~> 4.0.0)
   figaro (>= 0.7.0)
@@ -143,5 +155,6 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
+  therubyracer
   turbolinks
   uglifier (>= 1.3.0)

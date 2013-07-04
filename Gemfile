@@ -16,7 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -45,5 +45,5 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem "figaro", ">= 0.7.0"
-gem "capistrano", ">= 3.0.0.pre6"
-gem 'capistrano-rails', github: 'capistrano/rails', require: false
+gem "capistrano", github: 'teohm/capistrano', branch: 'v3-early-bundle'
+gem 'capistrano-rails', github: 'teohm/capistrano-rails', branch: 'late-migrate', require: false
